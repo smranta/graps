@@ -2,12 +2,12 @@ graps
 =====
 
 graps : capture OpenGL Frames graps is a tool for grabing frames from openGL application, without editing the application.
-graps can be used for making video from an opengl application. graps can also be useful for monitoring fps of opengl application.  graps writes the glReadPixel data to file on each glXSwapBuffers call. graps uses the power of LD_PRELOAD to run without modifying the application.  graps is dirty fraps alternative for screen and realtime video capturing and fps monitoring (hence benchmarking).
+graps can be used for making video from an opengl application. graps can also be useful for monitoring fps of opengl application.  graps writes the glReadPixel data to file on each glXSwapBuffers call. graps uses the power of LD_PRELOAD to run without modifying the application.  graps is dirty [fraps][0] alternative for screen and realtime video capturing and fps monitoring (hence benchmarking).
 
 How to Record Video
 -------------------
 
-in ~/grapsrc set rawvideo_stream=1
+in ~/.grapsrc set rawvideo_stream=1
 
 run opengl application using run.sh
 ```
@@ -29,7 +29,7 @@ You might also need to increase max shared memory (SHMMAX).
 How to Record Frames to Images
 ------------------------------
 
-in ~/grapsrc set rawvideo_stream=0
+in ~/.grapsrc set rawvideo_stream=0
 
 run opengl application using run.sh
 ```
@@ -45,7 +45,7 @@ $ ./grapsctl
 Running without grapsctl
 ------------------------
 
-in ~/grapsrc set grapsctl=0
+in ~/.grapsrc set grapsctl=0
 
 To record run
 ```
@@ -91,7 +91,13 @@ Changelog
 - bug fixes : ppm header (thanks matt) and width*width (thanks Mineral).
 - graps v0.2 release.
 
-Bugs
-----
-report bugs to smr [at] smr.co.in
 
+Similar projects
+----------------
+ * [glc][1]
+ * [Yukon][2]
+
+
+[0]: http://en.wikipedia.org/wiki/Fraps
+[1]: https://github.com/nullkey/glc/
+[2]: https://github.com/wereHamster/yukon/
