@@ -91,7 +91,3 @@ Changelog
 - bug fixes : ppm header (thanks matt) and width*width (thanks Mineral).
 - graps v0.2 release.
 
-Bugs
-----
-report bugs to smr [at] smr.co.in
-
