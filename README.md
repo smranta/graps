@@ -7,7 +7,7 @@ graps can be used for making video from an opengl application. graps can also be
 How to Record Video
 -------------------
 
-in ~/grapsrc set rawvideo_stream=1
+in ~/.grapsrc set rawvideo_stream=1
 
 run opengl application using run.sh
 ```
@@ -29,7 +29,7 @@ You might also need to increase max shared memory (SHMMAX).
 How to Record Frames to Images
 ------------------------------
 
-in ~/grapsrc set rawvideo_stream=0
+in ~/.grapsrc set rawvideo_stream=0
 
 run opengl application using run.sh
 ```
@@ -45,7 +45,7 @@ $ ./grapsctl
 Running without grapsctl
 ------------------------
 
-in ~/grapsrc set grapsctl=0
+in ~/.grapsrc set grapsctl=0
 
 To record run
 ```
