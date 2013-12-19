@@ -1,0 +1,53 @@
+# grapsrc
+# v0.1
+# (c) smr <smr [at] smr.co.in>
+#
+# copy to ~/.grapsrc
+#
+# comments should have '#' as first character in line
+# time is in milliseconds
+# no spaces before or after =
+
+# capture settings
+capture_enabled=1
+
+# capture every frame
+# this disables grapsctl
+capture_everyframe=0
+
+# frames capture delay
+# if grapsctl is enabled, make sure that frame writing 
+# doesnt take more time than this
+# otherwise try disabling grapsctl
+capture_delay=400
+
+# frames capture path
+capture_path=./frames/
+
+# showfps settings
+showfps_enabled=1
+showfps_delay=1000
+
+# flip the frame vertically
+# enabling it might decrease performance of
+# the application. so prefer to flip the 
+# frames offline ( using convert -flip )
+flip_frame=0
+
+# do not print the configuration string
+quiet=0
+
+# record video
+# write to fifo pipe (/tmp/grapsvideopipe)
+rawvideo_stream=1
+
+# enable frame resizing
+# doesn't work propery yet
+# disabled if video capture (rawvideo_stream) is enabled
+resize_enable=0
+
+# use grapsctl
+# this disables writing frames from opengl application
+# and instead grapsctl ( or record.sh ) should be run to start recording
+grapsctl=1
+
